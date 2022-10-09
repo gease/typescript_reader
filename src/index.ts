@@ -1,10 +1,10 @@
 import Referees from "./Analyzers/Referees";
 import {HtmlFileFormatter} from "./Formatters";
-import {CsvParser} from "./Parsers";
+import {MatchCsvParser} from "./Parsers";
 
 
-const parser = new CsvParser(process.argv[2]);
-const analyzer = new Referees('M Dean');
+const parser = new MatchCsvParser(process.argv[2]);
+const analyzer = new Referees('A Taylor');
 const formatter = new HtmlFileFormatter();
 
 
